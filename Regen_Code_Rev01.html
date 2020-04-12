@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	
+</head>
+	
+<body>
+	
+<canvas id="grid" width="750px" height="750px" style="position: absolute; left:0px; top:0px;">
+</canvas>
+		
+<script type="text/javascript">
+	
+	var canvas = document.getElementById('grid');
+	var context = canvas.getContext("2d");
+	
+	var width = canvas.width;
+	var height = canvas.height;
+	
+	var widthcenter = width / 2;
+	var heightcenter = height / 2;
+	
+	//draw centre lines
+		//draw y centre
+		context.moveTo(heightcenter,0);
+		context.lineTo(heightcenter,height);
+		context.stroke();
+	
+		//draw x centre
+		context.moveTo(0,widthcenter);
+		context.lineTo(width,widthcenter);
+		context.stroke();
+	
+</script>
+</body>
+</html>
