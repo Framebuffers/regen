@@ -12,15 +12,18 @@
 <script type="text/javascript">
 	
 	var canvas = document.getElementById('grid');
-	var context = canvas.getContext("2d");
-	
 	var width = canvas.width;
 	var height = canvas.height;
 	
+	//var width = 750;
 	var widthcenter = width / 2;
+	
+	//var height = 750;	
 	var heightcenter = height / 2;
 	
 	//draw centre lines
+	var context = canvas.getContext("2d");
+	
 		//draw y centre
 		context.moveTo(heightcenter,0);
 		context.lineTo(heightcenter,height);
